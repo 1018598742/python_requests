@@ -13,7 +13,7 @@ def basic_auth():
     基本认证
     :return:
     '''
-    response = requests.get(construct_url('user'),auth = ('testfta','123jiaolei'))
+    response = requests.get(construct_url('user'),auth = ('testfta',''))
     print(response.status_code)
     print(response.text)
     print(response.request.headers)
